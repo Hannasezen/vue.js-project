@@ -1,7 +1,27 @@
 import Vue from 'vue'
-import App from './App.vue'
+import VueRouter from 'vue-router'
+import Index from './pages/index'
+import Item from './pages/item'
+
+Vue.use(VueRouter)
+
+var router = new VueRouter({
+  routes: [
+    {
+      name: 'index',
+      path: '/',
+      component: Index
+    },
+    {
+      name: 'item',
+      path: '/item',
+      component: Item
+    }
+  ]
+})
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  router: router
+  //render: h => h(App)
 })
