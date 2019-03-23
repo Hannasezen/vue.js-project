@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from './pages/index'
 import Item from './pages/item'
+import './assets/css/style.css'
 
 Vue.use(VueRouter)
 
