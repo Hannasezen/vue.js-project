@@ -3,7 +3,7 @@
     <div class="footer container">
       <!--footer copyrights-->
       <div class="footer__copyrights">
-        &copy; 2010–2019, The Template Group inc.
+        &copy; 2010–2019, <a href="#">The Template Group inc.</a>
       </div>
       <!--footer share count-->
       <div class="footer__share">share
@@ -22,9 +22,9 @@
       <!--footer navigation-->
       <nav class="footer__nav">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#">Legal notice</a></li>
-          <li class="nav__item"><a href="#">Privacy policy</a></li>
-          <li class="nav__item"><a href="#">Site map</a></li>
+          <li class="nav__item"><router-link to="/">Legal notice</router-link></li>
+          <li class="nav__item"><router-link to="/">Privacy policy</router-link></li>
+          <li class="nav__item"><router-link to="/">Site map</router-link></li>
         </ul>
       </nav>
       <!--footer navigation end-->

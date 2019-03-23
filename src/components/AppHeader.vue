@@ -39,11 +39,11 @@
         <!--Header`s navigation-->
         <nav class="header__nav">
           <ul class="nav__links">
-            <li class="nav__link"><a href="./catalog.html">women</a></li>
-            <li class="nav__link"><a href="./catalog.html">men</a></li>
-            <li class="nav__link"><a href="./catalog.html">handbags</a></li>
-            <li class="nav__link"><a href="./catalog.html">Accessories</a></li>
-            <li class="nav__link"><a href="./catalog.html">Sale</a></li>
+            <li class="nav__link"><router-link to="/item">women</router-link></li>
+            <li class="nav__link"><router-link to="/item">men</router-link></li>
+            <li class="nav__link"><router-link to="/item">handbags</router-link></li>
+            <li class="nav__link"><router-link to="/item">Accessories</router-link></li>
+            <li class="nav__link"><router-link to="/item">Sale</router-link></li>
             <li class="nav__link"><a href="#new-arrivals">New Arrivals</a></li>
             <li class="nav__link"><a href="#footer">Clearance</a></li>
             <li class="nav__link"><a href="#footer">Store Locator</a></li>
@@ -213,4 +213,93 @@ export default {
   text-transform: capitalize;
   color: rgb(168, 168, 168);
 }
+@media screen and (max-width: 1023px) {
+  .header__logo {
+    font-size: 26px;
+  }
+
+  .auth-cart {
+    font-size: 12px;
+  }
+
+  .nav__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 0;
+    position: relative;
+  }
+
+  .mobile-wrapper {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+  }
+
+  .wrap-logo {
+    padding-right: 20px;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .auth {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .wrap-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    padding: 35px 20px 45px 20px;
+    box-shadow: 10px 10px 20px 0 rgb(0, 0, 0, 0.3);
+  }
+
+  .wrap-menu.open-menu  {
+    display: block;
+  }
+
+  .nav__links {
+    flex-direction: column;
+  }
+
+  .nav__link {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .nav__link:last-child {
+    margin-bottom: 80px;
+  }
+
+  .search::after {
+    display: block;
+  }
+
+  .search {
+    position: relative;
+    width: 167px;
+    margin-left: 0;
+  }
+}
+
 </style>
